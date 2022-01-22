@@ -1,0 +1,39 @@
+@model List<Orcamento>
+@{
+    ViewData["Title"] = "Listagem de usuários";
+}
+<header class="bg">
+    <img src="..\fotos\bsoundlogo.png" id="logo">
+    <div class="container">
+        <h4>"O que você precisa para o seu evento acontecer!!"</h4>
+    </div>
+
+<table class="table">
+    <tr>
+        <td>ID</td>
+        <td>Quantidade de Pessoas</td>
+        <td>Sub</td>
+        <td>Iluminação</td>
+        <td>Data Evento</td>
+        <td>Mensagem</td>
+    </tr>
+
+    @foreach (Orcamento o in Model)
+    {
+        <tr>
+            <td>@o.idOrcamento</td>
+            <td>@o.qtdPessoas</td>
+            <td>@o.sub</td>
+            <td>@o.iluminacao</td>
+            <td>@o.dataEvento</td>
+            <td>@o.mensagem</td>
+            <td>
+                <a href="/Orcamento/Editar?idOrcamento=@o.idOrcamento">Alterar</a>
+                <a href="/Orcamento/Excluir?idOrcamento=@o.idOrcamento"
+                onclick="return confirm('Deseja excluir esse item?');">Remover</a>
+
+            </td>
+        </tr>
+    }
+
+</table>

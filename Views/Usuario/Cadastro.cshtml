@@ -1,0 +1,44 @@
+@model Usuario
+@{
+    ViewData["Title"] = "Cadastro";
+}
+<section class="parallax main_products container" id="Cadastro">
+
+    <header class="bg">
+    <img src="..\fotos\bsoundlogo.png" id="logo">
+    <div class="container">
+        <h4>"O que você precisa para o seu evento acontecer!!"</h4>
+    </div>
+
+    <h4>Faça seu cadastro</h4>
+
+
+    <form method="POST" asp-action="Cadastro" class="table">
+        <p id="form1">
+            <label asp-for="Nome">Informe seu nome:</label>
+            <input asp-for="Nome">
+        </p>
+        <p id="form1">
+            <label asp-for="Telefone">Informe seu Telefone:</label>
+            <input asp-for="Telefone">
+        </p>
+        <p id="form1">
+            <label asp-for="Email">Informe seu E-mail:</label>
+            <input asp-for="Email">
+        </p>
+        <p id="form1">
+            <label asp-for="Login">Informe seu Login:</label>
+            <input asp-for="Login">
+        </p>
+        <p id="form1">
+            <label asp-for="Senha">Informe sua Senha:</label>
+            <input asp-for="Senha">
+        </p>
+
+
+        <p id="form1">
+            <input type="submit" value="Cadastrar">
+        </p>
+
+    </form>
+</section>

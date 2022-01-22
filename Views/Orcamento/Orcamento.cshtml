@@ -1,0 +1,58 @@
+@model Orcamento
+@{
+    ViewData["Title"] = "Orcamento";
+}
+
+<section class="parallax main_products container" data-speed="15" id="Preagenda">
+
+    <h4>Peça seu orçamento</h4>
+
+    <form method="POST" asp-action="Cadastro" class="table">
+        <div>
+            <p>Evento para quantas pessoas?</p>
+
+            <label for="radio-100"> <input type="radio" name="qtdpessoas" value="100" id="radio-100"> 100</label>
+
+
+            <label for="radio-200"><input type="radio" name="qtdpessoas" value="200" id="radio-200"> 200</label>
+
+
+            <label for="radio-300"><input type="radio" name="qtdpessoas" value="300" id="radio-300"> 300 ou mais</label>
+
+        </div>
+        <div>
+            <p>Deseja acrecentar SubWoofer?</p>
+
+            <label for="radio-sub"> <input type="radio" name="sub" value="sub" id="radio-sub"> Sim</label>
+
+
+            <label for="radio-subnao"><input type="radio" name="sub" value="subnao" id="radio-subnao"> Não</label>
+
+        </div>
+
+        <div>
+            <p>Deseja acrecentar iluminação?</p>
+
+            <label for="radio-iluminacao"> <input type="radio" name="iluminacao" value="iluminacao"
+                    id="radio-iluminacao"> Sim</label>
+
+
+            <label for="radio-iluminacaonao"><input type="radio" name="iluminacao" value="iluminacaonao"
+                    id="radio-iluminacaonao"> Não</label>
+
+        </div>
+        <div>
+            <label asp-for="dataEvento">Informe a data do evento:</label>
+            <input asp-for="dataEvento">
+        </div>
+
+        <div>
+            <label for="mensagem">Mensagem</label>
+            <textarea cols="30" rows="10" id="mensagem" class="input-padrao"></textarea>
+        </div>
+
+        <label><input type="checkbox" class="checkbox"> Gostaria de receber nossas novidades por e-mail!</label>
+        <input type="submit" value="Enviar">
+    </form>
+
+</section>

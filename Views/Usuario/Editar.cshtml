@@ -1,0 +1,35 @@
+@model Usuario
+@{
+    ViewData["Title"] = "Editar Orcamento";
+}
+
+<form method="POST" asp-action="Editar">
+
+    <input type="hidden" asp-for="Id">
+    <p id="form1">
+        <label asp-for="Nome">Informe seu nome:</label>
+        <input asp-for="Nome">
+    </p>
+    <p id="form1">
+        <label asp-for="Telefone">Informe seu Telefone:</label>
+        <input asp-for="Telefone">
+    </p>
+    <p id="form1">
+        <label asp-for="Email">Informe seu E-mail:</label>
+        <input asp-for="Email">
+    </p>
+    <p id="form1">
+            <label asp-for="Login">Informe seu Login:</label>
+            <input asp-for="Login">
+        </p>
+        <p id="form1">
+            <label asp-for="Senha">Informe sua Senha:</label>
+            <input asp-for="Senha">
+        </p>
+
+
+    <p id="form1">
+        <input type="submit" value="Cadastrar">
+    </p>
+
+</form>
