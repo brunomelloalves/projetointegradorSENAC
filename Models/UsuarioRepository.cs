@@ -6,10 +6,6 @@ namespace PI_ATV04_Bruno_Mello.Models
 {
        public class UsuarioRepository
     {
-        //objetivo: é crirar as funcionalidades/ métodos que manipulam 
-        //atributos da classe Usuario
-        //Cadastrar, Listar, Editar, Excluir - [CRUD] difinir as credenciais para acessar o banco de dados 
-
         private const string DadosConexao = "Database=bsound; Data Source=localhost; User Id=root;";
 
         public void TestarConexao(){
@@ -17,7 +13,6 @@ namespace PI_ATV04_Bruno_Mello.Models
             Conexao.Open(); //abre a conexão com o banco de dados 
             Console.WriteLine("Banco de dados funcionando!");
             Conexao.Close();//fecha a coenxão com banco de dados 
-
         }
 
         public Usuario ValidarLogin(Usuario user){
@@ -38,8 +33,7 @@ namespace PI_ATV04_Bruno_Mello.Models
 
                 if(!Reader.IsDBNull (Reader.GetOrdinal("Nome")))
                 UsuarioEncontrado.Nome = Reader.GetString("Nome");
-
-                
+               
                 if(!Reader.IsDBNull (Reader.GetOrdinal("Telefone")))
                 UsuarioEncontrado.Nome = Reader.GetString("Telefone");
 
@@ -80,10 +74,10 @@ namespace PI_ATV04_Bruno_Mello.Models
                 UsuarioEncontrado.Email = Reader.GetString("Email");
 
                 if(!Reader.IsDBNull (Reader.GetOrdinal("Login")))
-                UsuarioEncontrado.Email = Reader.GetString("Login");
+                UsuarioEncontrado.Login = Reader.GetString("Login");
 
                 if(!Reader.IsDBNull (Reader.GetOrdinal("Senha")))
-                UsuarioEncontrado.Email = Reader.GetString("Senha");
+                UsuarioEncontrado.Senha = Reader.GetString("Senha");
 
                 
             }
@@ -118,9 +112,9 @@ namespace PI_ATV04_Bruno_Mello.Models
                 if(!Reader.IsDBNull(Reader.GetOrdinal("Email")))
                     userEncontrado.Email = Reader.GetString("Email");
                 if(!Reader.IsDBNull(Reader.GetOrdinal("Login")))
-                    userEncontrado.Email = Reader.GetString("Login");
+                    userEncontrado.Login = Reader.GetString("Login");
                 if(!Reader.IsDBNull(Reader.GetOrdinal("Senha")))
-                    userEncontrado.Email = Reader.GetString("Senha");                
+                    userEncontrado.Senha = Reader.GetString("Senha");                
                 Lista.Add(userEncontrado);
             }
             Conexao.Close();   

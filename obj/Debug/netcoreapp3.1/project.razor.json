@@ -1,5 +1,5 @@
 {
-  "FilePath": "d:\\SENAC\\PROJETO INTEGRADOR\\PI_ATV04_Bruno_Mello\\PI_ATV04_Bruno_Mello.csproj",
+  "FilePath": "d:\\SENAC\\PROJETO SITE\\PI_ATV04_Bruno_Mello.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -14402,108 +14402,108 @@
   "RootNamespace": "PI_ATV04_Bruno_Mello",
   "Documents": [
     {
-      "FilePath": "d:\\SENAC\\PROJETO INTEGRADOR\\PI_ATV04_Bruno_Mello\\Views\\Home\\Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\SENAC\\PROJETO INTEGRADOR\\PI_ATV04_Bruno_Mello\\Views\\Home\\Institucional.cshtml",
-      "TargetPath": "Views\\Home\\Institucional.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\SENAC\\PROJETO INTEGRADOR\\PI_ATV04_Bruno_Mello\\Views\\Shared\\Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\SENAC\\PROJETO INTEGRADOR\\PI_ATV04_Bruno_Mello\\Views\\Home\\Fotos.cshtml",
-      "TargetPath": "Views\\Home\\Fotos.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\SENAC\\PROJETO INTEGRADOR\\PI_ATV04_Bruno_Mello\\Views\\Home\\Header.cshtml",
-      "TargetPath": "Views\\Home\\Header.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\SENAC\\PROJETO INTEGRADOR\\PI_ATV04_Bruno_Mello\\Views\\Home\\Footer.cshtml",
-      "TargetPath": "Views\\Home\\Footer.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\SENAC\\PROJETO INTEGRADOR\\PI_ATV04_Bruno_Mello\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\SENAC\\PROJETO INTEGRADOR\\PI_ATV04_Bruno_Mello\\Views\\Usuario\\Login.cshtml",
-      "TargetPath": "Views\\Usuario\\Login.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\SENAC\\PROJETO INTEGRADOR\\PI_ATV04_Bruno_Mello\\Views\\Orcamento\\Orcamento.cshtml",
-      "TargetPath": "Views\\Orcamento\\Orcamento.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\SENAC\\PROJETO INTEGRADOR\\PI_ATV04_Bruno_Mello\\Views\\Usuario\\Editar.cshtml",
-      "TargetPath": "Views\\Usuario\\Editar.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\SENAC\\PROJETO INTEGRADOR\\PI_ATV04_Bruno_Mello\\Views\\Shared\\_Layout.cshtml",
+      "FilePath": "d:\\SENAC\\PROJETO SITE\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\SENAC\\PROJETO INTEGRADOR\\PI_ATV04_Bruno_Mello\\Views\\Home\\_Index.cshtml",
-      "TargetPath": "Views\\Home\\_Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\SENAC\\PROJETO INTEGRADOR\\PI_ATV04_Bruno_Mello\\Views\\Usuario\\Cadastro.cshtml",
-      "TargetPath": "Views\\Usuario\\Cadastro.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\SENAC\\PROJETO INTEGRADOR\\PI_ATV04_Bruno_Mello\\Views\\Orcamento\\Listagem.cshtml",
+      "FilePath": "d:\\SENAC\\PROJETO SITE\\Views\\Orcamento\\Listagem.cshtml",
       "TargetPath": "Views\\Orcamento\\Listagem.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\SENAC\\PROJETO INTEGRADOR\\PI_ATV04_Bruno_Mello\\Views\\Orcamento\\Editar.cshtml",
-      "TargetPath": "Views\\Orcamento\\Editar.cshtml",
+      "FilePath": "d:\\SENAC\\PROJETO SITE\\Views\\Usuario\\Login.cshtml",
+      "TargetPath": "Views\\Usuario\\Login.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\SENAC\\PROJETO INTEGRADOR\\PI_ATV04_Bruno_Mello\\Views\\_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FilePath": "d:\\SENAC\\PROJETO SITE\\Views\\Usuario\\Cadastro.cshtml",
+      "TargetPath": "Views\\Usuario\\Cadastro.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\SENAC\\PROJETO INTEGRADOR\\PI_ATV04_Bruno_Mello\\Views\\Orcamento\\Cadastro.cshtml",
-      "TargetPath": "Views\\Orcamento\\Cadastro.cshtml",
+      "FilePath": "d:\\SENAC\\PROJETO SITE\\Views\\Usuario\\Editar.cshtml",
+      "TargetPath": "Views\\Usuario\\Editar.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\SENAC\\PROJETO INTEGRADOR\\PI_ATV04_Bruno_Mello\\Views\\_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FilePath": "d:\\SENAC\\PROJETO SITE\\Views\\Home\\Institucional.cshtml",
+      "TargetPath": "Views\\Home\\Institucional.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\SENAC\\PROJETO INTEGRADOR\\PI_ATV04_Bruno_Mello\\Views\\Home\\Main.cshtml",
-      "TargetPath": "Views\\Home\\Main.cshtml",
+      "FilePath": "d:\\SENAC\\PROJETO SITE\\Views\\Home\\Footer.cshtml",
+      "TargetPath": "Views\\Home\\Footer.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\SENAC\\PROJETO INTEGRADOR\\PI_ATV04_Bruno_Mello\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FilePath": "d:\\SENAC\\PROJETO SITE\\Views\\Home\\Fotos.cshtml",
+      "TargetPath": "Views\\Home\\Fotos.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\SENAC\\PROJETO SITE\\Views\\Orcamento\\Orcamento.cshtml",
+      "TargetPath": "Views\\Orcamento\\Orcamento.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\SENAC\\PROJETO SITE\\Views\\Usuario\\Listagem.cshtml",
+      "TargetPath": "Views\\Usuario\\Listagem.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\SENAC\\PROJETO SITE\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\SENAC\\PROJETO SITE\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\SENAC\\PROJETO INTEGRADOR\\PI_ATV04_Bruno_Mello\\Views\\Usuario\\Listagem.cshtml",
-      "TargetPath": "Views\\Usuario\\Listagem.cshtml",
+      "FilePath": "d:\\SENAC\\PROJETO SITE\\Views\\Orcamento\\Cadastro.cshtml",
+      "TargetPath": "Views\\Orcamento\\Cadastro.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\SENAC\\PROJETO SITE\\Views\\Orcamento\\Editar.cshtml",
+      "TargetPath": "Views\\Orcamento\\Editar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\SENAC\\PROJETO SITE\\Views\\Home\\Header.cshtml",
+      "TargetPath": "Views\\Home\\Header.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\SENAC\\PROJETO SITE\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\SENAC\\PROJETO SITE\\Views\\Home\\Main.cshtml",
+      "TargetPath": "Views\\Home\\Main.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\SENAC\\PROJETO SITE\\Views\\Home\\Privacy.cshtml",
+      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\SENAC\\PROJETO SITE\\Views\\Home\\__Index.cshtml",
+      "TargetPath": "Views\\Home\\__Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\SENAC\\PROJETO SITE\\Views\\Shared\\Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\SENAC\\PROJETO SITE\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
     }
   ],

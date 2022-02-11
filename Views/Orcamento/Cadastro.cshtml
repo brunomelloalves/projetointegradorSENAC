@@ -3,60 +3,56 @@
     ViewData["Title"] = "Cadastro Orçamento";
 }
 
-<section class="parallax main_products container" id="Cadastrar">
+<!DOCTYPE html>
+<html lang="pt-br">
 
+<head>
+    <title>B-Sound</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="..\css\style.css">
+</head>
 
-   <header class="bg">
-    <img src="..\fotos\bsoundlogo.png" id="logo">
-    <div class="container">
-        <h4>"O que você precisa para o seu evento acontecer!!"</h4>
-    </div>
-    
-    <h4>Peça seu orçamento</h4>
+<body>
 
+    <section class="parallax main_products container" id="Cadastrar">
 
-    <form method="POST" asp-action="Cadastrar" class="table">
+        <h4>Peça seu orçamento</h4>
 
+        <form method="POST" asp-action="Cadastrar" class="table">
 
-        <div>
-            <p id="form1">
-                <label asp-for="qtdPessoas">Quantidade de Pessoas?</label>
-                <input asp-for="qtdPessoas">
+            <div>
+                <p id="form-group">
+                    <label asp-for="qtdPessoas">Quantidade de Pessoas?</label>
+                    <input type="text" asp-for="qtdPessoas" class="form-control" required />
+                </p>
+            </div>
+
+            <div>
+                <p>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" asp-for="sub" />
+                    <label class="form-check-label" for="sub">Acrecentar SubWoofer:</label>
+                </div>
+            </div>
+
+            <div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" asp-for="iluminacao" />
+                    <label class="form-check-label" for="iluminacao">Acrecentar iluminação:</label>
+                </div>
+            </div>
             </p>
-
-        </div>
-        <div>
-            <p id="form1">Deseja acrecentar SubWoofer?</p>
-
-            <label for="radio-sub"> <input type="radio" name="sub" value="sub" id="radio-sub"> Sim</label>
-
-
-            <label for="radio-subnao"><input type="radio" name="sub" value="subnao" id="radio-subnao"> Não</label>
-
-        </div>
-
-        <div>
-            <p id="form1">Deseja acrecentar iluminação?</p>
-
-            <label for="radio-iluminacao"> <input type="radio" name="iluminacao" value="iluminacao"
-                    id="radio-iluminacao"> Sim</label>
-
-
-            <label for="radio-iluminacaonao"><input type="radio" name="iluminacao" value="iluminacaonao"
-                    id="radio-iluminacaonao"> Não</label>
-
-        </div>
-        <p id="form1">
-            <label asp-for="dataEvento">Informe a data de seu evento:</label>
-            <input asp-for="dataEvento">
-        </p>
-        <div>
-            <label for="mensagem">Mensagem</label>
-            <input asp-for="mensagem" cols="30" rows="10" id="mensagem" class="input-padrao">
-        </div>
-
-        <p id="form1">
-            <input type="submit" value="Cadastrar">
-        </p>
-    </form>
-</section>
+            <p id="form-group">
+                <label asp-for="dataEvento">Informe a data de seu evento:</label>
+                <input asp-for="dataEvento">
+            </p>
+            <div id="form-group">
+                <label for="mensagem">Mensagem</label>
+                <input input type="text" asp-for="mensagem" cols="30" rows="10" id="mensagem" class="form-control">
+            </div>
+            <p id="form-group">
+                <input type="submit" value="Cadastrar">
+            </p>
+        </form>
+    </section>
+</body>

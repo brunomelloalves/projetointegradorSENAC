@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\SENAC\\PROJETO INTEGRADOR\\PI_ATV04_Bruno_Mello\\PI_ATV04_Bruno_Mello.csproj": {}
+    "D:\\SENAC\\PROJETO SITE\\PI_ATV04_Bruno_Mello.csproj": {}
   },
   "projects": {
-    "D:\\SENAC\\PROJETO INTEGRADOR\\PI_ATV04_Bruno_Mello\\PI_ATV04_Bruno_Mello.csproj": {
+    "D:\\SENAC\\PROJETO SITE\\PI_ATV04_Bruno_Mello.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SENAC\\PROJETO INTEGRADOR\\PI_ATV04_Bruno_Mello\\PI_ATV04_Bruno_Mello.csproj",
+        "projectUniqueName": "D:\\SENAC\\PROJETO SITE\\PI_ATV04_Bruno_Mello.csproj",
         "projectName": "PI_ATV04_Bruno_Mello",
-        "projectPath": "D:\\SENAC\\PROJETO INTEGRADOR\\PI_ATV04_Bruno_Mello\\PI_ATV04_Bruno_Mello.csproj",
+        "projectPath": "D:\\SENAC\\PROJETO SITE\\PI_ATV04_Bruno_Mello.csproj",
         "packagesPath": "C:\\Users\\bruno\\.nuget\\packages\\",
-        "outputPath": "D:\\SENAC\\PROJETO INTEGRADOR\\PI_ATV04_Bruno_Mello\\obj\\",
+        "outputPath": "D:\\SENAC\\PROJETO SITE\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bruno\\AppData\\Roaming\\NuGet\\NuGet.Config",

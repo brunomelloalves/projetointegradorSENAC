@@ -22,8 +22,13 @@ namespace PI_ATV04_Bruno_Mello.Controllers
         {
 
             UsuarioRepository ur = new UsuarioRepository();
-            ur.TestarConexao();
+            // ur.TestarConexao();
             
+
+            return View();
+        }
+        public IActionResult Institucional()
+        {
 
             return View();
         }

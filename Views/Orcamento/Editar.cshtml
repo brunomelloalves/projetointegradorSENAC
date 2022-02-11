@@ -2,48 +2,52 @@
 @{
     ViewData["Title"] = "Editar Orcamento";
 }
+<!DOCTYPE html>
+<html lang="pt-br">
 
-<form method="POST" asp-action="Editar">
+<head>
+    <title>B-Sound</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="..\css\style.css">
+</head>
 
-    <input type="hidden" asp-for="idOrcamento">
-     <div>
-            <p id="form1">
+<body>
+
+    <form method="POST" asp-action="Editar">
+
+        <input type="hidden" asp-for="idOrcamento">
+        <div>
+            <p id="form-group">
                 <label asp-for="qtdPessoas">Quantidade de Pessoas?</label>
                 <input asp-for="qtdPessoas">
             </p>
 
         </div>
         <div>
-            <p id="form1">Deseja acrecentar SubWoofer?</p>
-
-            <label for="radio-sub"> <input type="radio" name="sub" value="sub" id="radio-sub"> Sim</label>
-
-
-            <label for="radio-subnao"><input type="radio" name="sub" value="subnao" id="radio-subnao"> Não</label>
-
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" asp-for="sub" />
+                <label class="form-check-label" for="sub">Acrecentar SubWoofer:</label>
+            </div>
         </div>
 
         <div>
-            <p id="form1">Deseja acrecentar iluminação?</p>
-
-            <label for="radio-iluminacao"> <input type="radio" name="iluminacao" value="iluminacao"
-                    id="radio-iluminacao"> Sim</label>
-
-
-            <label for="radio-iluminacaonao"><input type="radio" name="iluminacao" value="iluminacaonao"
-                    id="radio-iluminacaonao"> Não</label>
-
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" asp-for="iluminacao" />
+                <label class="form-check-label" for="iluminacao">Acrecentar iluminação:</label>
+            </div>
         </div>
-        <p id="form1">
+
+        <p id="form-group">
             <label asp-for="dataEvento">Informe a data de seu evento:</label>
             <input asp-for="dataEvento">
         </p>
         <div>
             <label for="mensagem">Mensagem</label>
-            <input asp-for="mensagem" cols="30" rows="10" id="mensagem" class="input-padrao">
+            <input input type="text" asp-for="mensagem" cols="30" rows="10" id="mensagem" class="form-control">
         </div>
 
-        <p id="form1">
+        <p id="form-group">
             <input type="submit" value="Editar">
         </p>
     </form>
+</body>

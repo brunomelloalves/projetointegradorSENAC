@@ -24,16 +24,19 @@ namespace PI_ATV04_Bruno_Mello.Models
 
             if(Reader.Read()){
                 OrcamentoEncontrado.idOrcamento = Reader.GetInt32("idOrcamento");
+                OrcamentoEncontrado.idOrcamento = Reader.GetInt32("usuarioId");
 
                 if(!Reader.IsDBNull (Reader.GetOrdinal("qtdPessoas")))
                 OrcamentoEncontrado.qtdPessoas = Reader.GetString("qtdPessoas");
 
-                
                 if(!Reader.IsDBNull (Reader.GetOrdinal("sub")))
                 OrcamentoEncontrado.sub = Reader.GetBoolean("sub");
 
                 if(!Reader.IsDBNull (Reader.GetOrdinal("iluminacao")))
                 OrcamentoEncontrado.iluminacao = Reader.GetBoolean("iluminacao");
+
+                if(!Reader.IsDBNull (Reader.GetOrdinal("mensagem")))
+                OrcamentoEncontrado.mensagem = Reader.GetString("mensagem");
                 
                 OrcamentoEncontrado.dataEvento = Reader.GetDateTime("dataEvento");
             }
@@ -75,6 +78,8 @@ namespace PI_ATV04_Bruno_Mello.Models
 
                 orcEncontrado.dataEvento = Reader.GetDateTime("dataEvento");
                 
+                orcEncontrado.Usuario.Nome = Reader.GetString("Nome");
+                
                                 
                 Lista.Add(orcEncontrado);
             }
@@ -92,6 +97,7 @@ namespace PI_ATV04_Bruno_Mello.Models
             Comando.Parameters.AddWithValue("@iluminacao",orc.iluminacao);
             Comando.Parameters.AddWithValue("@mensagem",orc.mensagem);
             Comando.Parameters.AddWithValue("@dataEvento",orc.dataEvento);
+            Comando.Parameters.AddWithValue("@usuarioId",orc.Usuario.Nome);//verificar
             
             Comando.ExecuteNonQuery();               
             Conexao.Close();   
