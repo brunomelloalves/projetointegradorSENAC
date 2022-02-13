@@ -12,61 +12,74 @@
 </head>
 
 <body>
-    <header>
-        <h4>"Nossos eventos"</h4>
-    </header>
+    <div class="geral">
 
-    <section id="texto">
-        <div> 
-            <p>
-                "Nossa empresa está no mercado de eventos a mais de 4 anos e temos mais de 16 anos de experiência no ramo de eventos. Nossa empresa conta com os melhores materiais e mão de obra para atender com exelência seu evento ou festa. Temos know hall em ebemtos corporativos, eventos, festas de aniverssário e casamentos. Atendemos também empresas e bandas que necessitam de mão de obra especializada para a realização de seus espetáculos."
-            </p>
-            <h4 class="centralizado">Confira alguns de nossos trabalhos!!</h4>
+
+        <section id="texto">
+            <header>
+                <h3>"Nossos eventos"</h3>
+            </header>
+            <div>
+                <p>
+                    "Nossa empresa está no mercado de eventos a mais de 4 anos e temos mais de 16 anos de experiência no
+                    ramo de eventos. Nossa empresa conta com os melhores materiais e mão de obra para atender com
+                    exelência seu evento ou festa. Temos know hall em ebemtos corporativos, eventos, festas de
+                    aniverssário e casamentos. Atendemos também empresas e bandas que necessitam de mão de obra
+                    especializada para a realização de seus espetáculos."
+                </p>
+                @* <h4 class="centralizado">Confira alguns de nossos trabalhos!!</h4> *@
+            </div>
+        </section>
+
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 6</div>
+                <img src="./fotos/01.png" id="imagem" alt="fotoMoradadosBais" style="width: 250; height: 180;">
+                <div class="text">Sesc Morada dos Baís</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 6</div>
+                <img src="./fotos/05.png" id="imagem" alt="Perkal" style="width: 250; height: 130;">
+                <div class="text">Perkal - Chevrolet</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 6</div>
+                <img src="./fotos/discautol.jpg" id="imagem" alt="Perkal" style="width: 250; height: 130;">
+                <div class="text">Discautol - Volkswagem</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 6</div>
+                <img src="./fotos/03.png" id="imagem" alt="Bionatus" style="width: 250; height: 130;">
+                <div class="text">Formatura - Bionatus</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 6</div>
+                <img src="./fotos/04.png" id="imagem" alt="UCDB" style="width: 250; height: 130;">
+                <div class="text">Ginásio Don Bosco</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 6</div>
+                <img src="./fotos/06.png" id="imagem" alt="fotoADCG" alt="UCDB" style="width: 250; height: 130;">
+                <div class="text">ADCG</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+            <a class="next" onclick="plusSlides(1)">&#10095</a>
+
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
         </div>
-    </section>
 
-
-    <div class="slideshow-container">
-
-        <div class="mySlides fade">
-            <div class="numbertext">1 / 5</div>
-            <img src="./fotos/01.png" id="imagem" alt="fotoMoradadosBais" style="width: 250; height: 180;">
-            <div class="text">Sesc Morada dos Baís</div>
-        </div>
-
-        <div class="mySlides fade">
-            <div class="numbertext">2 / 5</div>
-            <img src="./fotos/05.png" id="imagem" alt="Perkal" style="width: 250; height: 130;">
-            <div class="text">Perkal - Chavrolet</div>
-        </div>
-
-        <div class="mySlides fade">
-            <div class="numbertext">3 / 5</div>
-            <img src="./fotos/03.png" id="imagem" alt="Bionatus" style="width: 250; height: 130;">
-            <div class="text">Formatura - Bionatus</div>
-        </div>
-        <div class="mySlides fade">
-            <div class="numbertext">4 / 5</div>
-            <img src="./fotos/04.png" id="imagem" alt="UCDB" style="width: 250; height: 130;">
-            <div class="text">Ginásio Don Bosco</div>
-        </div>
-        <div class="mySlides fade">
-            <div class="numbertext">5 / 5</div>
-            <img src="./fotos/06.png" id="imagem" alt="fotoADCG" alt="UCDB" style="width: 250; height: 130;">
-            <div class="text">ADCG</div>
-        </div>
-
-        <a class="prev" onclick="plusSlides(-1)">&#10094</a>
-        <a class="next" onclick="plusSlides(1)">&#10095</a>
-
-    </div>
-
-
-    <div class="dot-container">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-        <span class="dot" onclick="currentSlide(5)"></span>
     </div>
 </body>

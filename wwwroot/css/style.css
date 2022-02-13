@@ -1,7 +1,15 @@
-* {box-sizing:border-box;}
+
 html{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #3c3c3c import !important;
+    color: white import !important;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-image: linear-gradient(to bottom right, #000000, #008371 );
+    background-repeat: repeat-x;
 }
 
 .nav-item{
@@ -9,14 +17,13 @@ html{
     justify-content: right;
 }
 
-
 header
 {
     min-height:4em;
     margin: 20px;
     text-align: center;
     padding: 10px;
-    color: black;
+    color: white;
 }
 
 #imagem{
@@ -24,6 +31,11 @@ header
 
 }
 
+.geral{
+    display: flex;
+    justify-content: flex-start;
+
+}
 .slideshow-container{
     max-width: 100%;
     position: relative;
@@ -43,7 +55,7 @@ header
     height: 15px;
     margin: 0 2px;
     display: inline-block;
-    background-color: #bbb;
+    background-color:black;
     border-radius: 50%;
     cursor: pointer;
     transition: background-color 0.6s ease;
@@ -64,7 +76,7 @@ header
 .text{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;   
-    color:#f2f2f2;
+    color: white;
     position:absolute;
     bottom: 40px;
     width: 100%;
@@ -74,6 +86,14 @@ header
 
 #texto{
     margin: 40px;
+    color: white;
+}
+
+#textoProdutos{
+    margin-top: 272px;
+    margin-right: 10px;
+    color: white;
+
 }
 
 .prev, .next{
@@ -91,7 +111,7 @@ header
 } 
 
 .prev:hover, .next:hover{
-    background-color: rgba(0,0,0,8);
+    background-color: white;
     
 }
 .next{
@@ -108,7 +128,7 @@ header
 }
 
 .active, .dot:hover{
-    background-color: #717171;
+    background-color: white;
 }
 
 @-webkit-keyframes fade{
@@ -142,4 +162,26 @@ header
 }
 #form-group{
     margin: 20px;;
+}
+
+.rodape{
+    display: flex;
+    justify-content:center;
+
+}
+
+.icones{
+    display: flex;
+    justify-content:center;
+    margin-top: 13px;
+
+}
+
+li {
+    list-style-type: none;
+    
+}
+
+a{
+    padding: 20px;
 }

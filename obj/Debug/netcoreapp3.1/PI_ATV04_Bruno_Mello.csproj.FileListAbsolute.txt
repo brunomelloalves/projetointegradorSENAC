@@ -133,7 +133,6 @@ D:\SENAC\PROJETO SITE\obj\Debug\netcoreapp3.1\Razor\Views\Home\Footer.cshtml.g.c
 D:\SENAC\PROJETO SITE\obj\Debug\netcoreapp3.1\Razor\Views\Home\Fotos.cshtml.g.cs
 D:\SENAC\PROJETO SITE\obj\Debug\netcoreapp3.1\Razor\Views\Home\Header.cshtml.g.cs
 D:\SENAC\PROJETO SITE\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
-D:\SENAC\PROJETO SITE\obj\Debug\netcoreapp3.1\Razor\Views\Home\Institucional.cshtml.g.cs
 D:\SENAC\PROJETO SITE\obj\Debug\netcoreapp3.1\Razor\Views\Home\Main.cshtml.g.cs
 D:\SENAC\PROJETO SITE\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 D:\SENAC\PROJETO SITE\obj\Debug\netcoreapp3.1\Razor\Views\Orcamento\Cadastro.cshtml.g.cs
@@ -157,3 +156,4 @@ D:\SENAC\PROJETO SITE\obj\Debug\netcoreapp3.1\PI_ATV04_Bruno_Mello.pdb
 D:\SENAC\PROJETO SITE\obj\Debug\netcoreapp3.1\PI_ATV04_Bruno_Mello.genruntimeconfig.cache
 D:\SENAC\PROJETO SITE\obj\Debug\netcoreapp3.1\PI_ATV04_Bruno_Mello.csproj.CopyComplete
 D:\SENAC\PROJETO SITE\obj\Debug\netcoreapp3.1\Razor\Views\Home\__Index.cshtml.g.cs
+D:\SENAC\PROJETO SITE\obj\Debug\netcoreapp3.1\Razor\Views\Home\Produtos.cshtml.g.cs

@@ -27,7 +27,7 @@ namespace PI_ATV04_Bruno_Mello.Controllers
 
             return View();
         }
-        public IActionResult Institucional()
+        public IActionResult Produtos()
         {
 
             return View();

@@ -8,7 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - B Sound - Show Support</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/sitePI04.css" />
+    <link rel="stylesheet" href="~/css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
 
 <body>
@@ -29,94 +31,51 @@
                         <a class="nav-link" aria-current="page" asp-controller="Home" asp-action="Index">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/Home/Institucional">Produtos</a>
+                        <a class="nav-link" href="/Home/Produtos">Produtos</a>
                     </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link text-light dropdown-toggle" data-toggle="dropdown"
-                                href="#">Usuario</a>
-                            <div class="dropdown-menu" >
-                                <a class="dropdown-item" href="/Usuario/Cadastro">Cadastro</a>
-                                <a class="dropdown-item" href="/Usuario/Listagem">Listagem</a>
-                                <li class="nav-item dropdown">
-                        <a class="nav-link text-light dropdown-toggle" data-toggle="dropdown"
-                            href="#">Orçamento</a>
-                        <div class="dropdown-menu" >
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-light dropdown-toggle" data-toggle="dropdown" href="#">Usuario</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="/Usuario/Cadastro">Cadastro</a>
+                            <a class="dropdown-item" href="/Usuario/Listagem">Listagem</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-light dropdown-toggle" data-toggle="dropdown" href="#">Orçamento</a>
+                        <div class="dropdown-menu">
                             <a class="dropdown-item" href="/Orcamento/Cadastro">Cadastro</a>
                             <a class="dropdown-item" href="/Orcamento/Listagem">Listagem</a>
-
-
-
-
-@*                     
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Usuário
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="/Usuario/Cadastrp"></a>Cadastro
-                                    Usuario</a></li>
-                            <li><a class="dropdown-item" href="#">Orçamento</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li> *@
                 </ul>
             </div>
         </div>
     </nav>
 
 
-    @* <body>
-        <header>
 
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-        <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-        <ul class="navbar-nav flex-grow-1">
-        <li class="nav-item">
-        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link text-dark" href="#Institucional">Institucional</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link text-dark" asp-area="" asp-controller="Usuario"
-        asp-action="Cadastro">Cadastro Usuario</a>
-        </li>
-        @if (Context.Session.GetInt32("IdUsuario") == null)
-        {
-        <a class="nav-link text-dark" asp-area="" asp-controller="Usuario" asp-action="Login">Login</a>
-        }
-        else
-        {
-        <li class="nav-item">
-        <a class="nav-link text-dark" asp-area="" asp-controller="Usuario"
-        asp-action="Listagem">Listagem de Usuario</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link text-dark" asp-area="" asp-controller="Orcamento"
-        asp-action="Cadastro">Cadastro Orçamento</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link text-dark" asp-area="" asp-controller="Orcamento"
-        asp-action="Listagem">Listagem de Orçamento</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link text-dark" asp-area="" asp-controller="Usuario" asp-action="Logout">Sair</a>
-        </li>
-        }
-        </ul>
-        </div>
-        </div>
-        </nav>
-        </header>
-        <div> *@
     <main role="main" class="pb-3">
         @RenderBody()
     </main>
     </div>
+
+    <footer class="bg-dark text-light">
+        <div class="rodape">
+
+            <div>
+                <ul class="icones">
+                    <li><a href="https://www.facebook.com/B-Sound-Show-Support-1425842790863667" target="_blank"
+                            class="individual"><i class="fab fa-facebook fa-3x "></i></a></li>
+                    <li><a href="https://www.instagram.com/bsound_showsupport" target="_blank" class="individual"><i
+                                class="fab fa-instagram fa-3x"></i></a></li>
+                    <li><a href="#" class="individual"><i class="fab fa-whatsapp fa-3x"></i></a></li>
+                </ul>
+            </div>
+
+
+        </div>
+        <div class="text-center" style="background-color: #333; padding: 20px;">
+            &copy 2022 Copyright: Bsound Show Support <a
+                href="https://www.linkedin.com/in/bruno-eduardo-de-mello-alves-08ba24a9" target="_blank">Bruno Mello</a>
+        </div>
+        </div>
+    </footer>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

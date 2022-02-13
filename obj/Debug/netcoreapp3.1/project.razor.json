@@ -14427,11 +14427,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\SENAC\\PROJETO SITE\\Views\\Home\\Institucional.cshtml",
-      "TargetPath": "Views\\Home\\Institucional.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "d:\\SENAC\\PROJETO SITE\\Views\\Home\\Footer.cshtml",
       "TargetPath": "Views\\Home\\Footer.cshtml",
       "FileKind": "mvc"
@@ -14474,6 +14469,11 @@
     {
       "FilePath": "d:\\SENAC\\PROJETO SITE\\Views\\Home\\Header.cshtml",
       "TargetPath": "Views\\Home\\Header.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\SENAC\\PROJETO SITE\\Views\\Home\\Produtos.cshtml",
+      "TargetPath": "Views\\Home\\Produtos.cshtml",
       "FileKind": "mvc"
     },
     {
