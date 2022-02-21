@@ -79,6 +79,9 @@ namespace PI_ATV04_Bruno_Mello.Models
                 if(!Reader.IsDBNull (Reader.GetOrdinal("Senha")))
                 UsuarioEncontrado.Senha = Reader.GetString("Senha");
 
+                if(!Reader.IsDBNull (Reader.GetInt32("Tipo")))
+                UsuarioEncontrado.Senha = Reader.GetString("Tipo");
+
                 
             }
 
@@ -115,6 +118,8 @@ namespace PI_ATV04_Bruno_Mello.Models
                     userEncontrado.Login = Reader.GetString("Login");
                 if(!Reader.IsDBNull(Reader.GetOrdinal("Senha")))
                     userEncontrado.Senha = Reader.GetString("Senha");                
+                if(!Reader.IsDBNull(Reader.GetInt32("Tipo")))
+                    userEncontrado.Tipo = Reader.GetInt32("Tipo");                
                 Lista.Add(userEncontrado);
             }
             Conexao.Close();   
@@ -124,7 +129,7 @@ namespace PI_ATV04_Bruno_Mello.Models
         public void Cadastrar(Usuario user){
             MySqlConnection Conexao = new MySqlConnection(DadosConexao);
             Conexao.Open();  
-            String Query = "INSERT INTO Usuario (Id, Nome, Telefone, Email, Login, Senha) Values (@Id, @Nome, @Telefone, @Email, @Login, @Senha)";
+            String Query = "INSERT INTO Usuario (Id, Nome, Telefone, Email, Login, Senha, Tipo) Values (@Id, @Nome, @Telefone, @Email, @Login, @Senha, @Tipo)";
             MySqlCommand Comando =  new MySqlCommand(Query,Conexao);  
             Comando.Parameters.AddWithValue("@Id",user.Id);            
             Comando.Parameters.AddWithValue("@Nome",user.Nome); 
@@ -132,6 +137,7 @@ namespace PI_ATV04_Bruno_Mello.Models
             Comando.Parameters.AddWithValue("@Email",user.Email);
             Comando.Parameters.AddWithValue("@Login",user.Login); 
             Comando.Parameters.AddWithValue("@Senha",user.Senha);  
+            Comando.Parameters.AddWithValue("@Tipo",user.Tipo);  
             
             Comando.ExecuteNonQuery();               
             Conexao.Close();   
@@ -140,7 +146,7 @@ namespace PI_ATV04_Bruno_Mello.Models
         public void Editar(Usuario user){
             MySqlConnection Conexao = new MySqlConnection(DadosConexao);
             Conexao.Open();  
-            String Query = "UPDATE Usuario SET Nome=@Nome, Telefone=@Telefone, Email=@Email WHERE Id=@Id";
+            String Query = "UPDATE Usuario SET Nome=@Nome, Telefone=@Telefone, Email=@Email, Tipo=@Tipo,  WHERE Id=@Id";
             MySqlCommand Comando =  new MySqlCommand(Query,Conexao);             
             Comando.Parameters.AddWithValue("@Id",user.Id); 
             Comando.Parameters.AddWithValue("@Nome",user.Nome); 
@@ -148,6 +154,7 @@ namespace PI_ATV04_Bruno_Mello.Models
             Comando.Parameters.AddWithValue("@Email",user.Email); 
             Comando.Parameters.AddWithValue("@Login",user.Login); 
             Comando.Parameters.AddWithValue("@Senha",user.Senha); 
+            Comando.Parameters.AddWithValue("@Tipo",user.Tipo); 
             Comando.ExecuteNonQuery();               
             Conexao.Close();
         }

@@ -3,22 +3,39 @@
     ViewData["Title"] = "Login";
 }
 
-<form method="POST" asp-action="Login">
-    
-    <p> 
-        <label asp-for="Login">Informe seu login:</label>
-        <input asp-for="Login">
-    </p>
-    <p> 
-        <label asp-for="Senha">Informe sua Senha:</label>
-        <input asp-for="Senha" type="password">
-    </p>
-    
+<div class="container-fluid col-12">
 
-    <p>
-        <input type="submit" value="Acessar">
-    </p>
-    <p>
-        @ViewBag.Mensagem        
-    </p>
-</form>
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-xl-12">
+            <h2>Faça seu Login</h2>
+        </div>
+        <div class="col-sm-12 col-md-12 col-xl-12">
+            <form method="POST" asp-action="Login" class="table">
+
+                <div class="formularios">
+
+                    <div class="caixa grande">
+                        <div class="interno">
+                            <p id="form-group">
+                                <label asp-for="Login">Informe seu login:</label>
+                                <input asp-for="Login" class="form-control">
+                            </p>
+                            <p id="form-group">
+                                <label asp-for="Senha">Informe sua Senha:</label>
+                                <input asp-for="Senha" type="password" class="form-control">
+                            </p>
+
+
+                            <p id="form-group">
+                                <input type="submit" value="Acessar">
+                            </p>
+                            <p id="form-group">
+                                @ViewBag.Mensagem
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -78,7 +78,7 @@ namespace PI_ATV04_Bruno_Mello.Models
 
                 orcEncontrado.dataEvento = Reader.GetDateTime("dataEvento");
                 
-                orcEncontrado.Usuario.Nome = Reader.GetString("Nome");
+                //orcEncontrado.Usuario.Nome = Reader.GetString("Nome");
                 
                                 
                 Lista.Add(orcEncontrado);
@@ -97,7 +97,7 @@ namespace PI_ATV04_Bruno_Mello.Models
             Comando.Parameters.AddWithValue("@iluminacao",orc.iluminacao);
             Comando.Parameters.AddWithValue("@mensagem",orc.mensagem);
             Comando.Parameters.AddWithValue("@dataEvento",orc.dataEvento);
-            Comando.Parameters.AddWithValue("@usuarioId",orc.Usuario.Nome);//verificar
+            //Comando.Parameters.AddWithValue("@usuarioId",orc.Usuario.Nome);//verificar
             
             Comando.ExecuteNonQuery();               
             Conexao.Close();   

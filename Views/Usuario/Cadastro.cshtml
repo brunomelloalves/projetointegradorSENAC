@@ -2,49 +2,51 @@
 @{
     ViewData["Title"] = "Cadastro";
 }
-<!DOCTYPE html>
-<html lang="pt-br">
 
-<head>
-    <title>B-Sound</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="..\css\style.css">
-</head>
 
 <body>
 
 
     <section class="parallax main_products container" id="Cadastro">
 
-        <h4>Faça seu cadastro</h4>
+        <h2>Faça seu cadastro</h2>
 
-        <form method="POST" asp-action="Cadastro" class="table">
+        <div class="caixa">
+            <div class="interno">
 
-            <p id="form-group">
-                <label asp-for="Nome">Informe seu nome:</label>
-                <input type="text" asp-for="Nome" class="form-control" required />
-            </p>
-            <p id="form-group">
-                <label asp-for="Telefone">Informe seu Telefone:</label>
-                <input type="text" asp-for="Telefone" class="form-control" required />
-            </p>
-            <p id="form-group">
-                <label asp-for="Email">Informe seu E-mail:</label>
-                <input type="text" asp-for="Email" class="form-control" required />
-            </p>
-            <p id="form-group">
-                <label asp-for="Login">Informe seu Login:</label>
-                <input type="text" asp-for="Login" class="form-control" required />
-            </p>
-            <p id="form-group">
-                <label asp-for="Senha">Informe sua Senha:</label>
-                <input type="text" asp-for="Senha" class="form-control" required />
-            </p>
+                <form method="POST" asp-action="Cadastro" class="table">
 
-            <p id="form-group">
-                <input type="submit" value="Cadastrar">
-            </p>
+                    <p id="form-group">
+                        <label asp-for="Nome">Informe seu nome:</label>
+                        <input type="text" asp-for="Nome" class="form-control" required />
+                    </p>
+                    <p id="form-group">
+                        <label asp-for="Telefone">Informe seu Telefone:</label>
+                        <input type="text" asp-for="Telefone" class="form-control" required />
+                    </p>
+                    <p id="form-group">
+                        <label asp-for="Email">Informe seu E-mail:</label>
+                        <input type="text" asp-for="Email" class="form-control" required />
+                    </p>
+                    <p id="form-group">
+                        <label asp-for="Login">Informe seu Login:</label>
+                        <input type="text" asp-for="Login" class="form-control" required />
+                    </p>
+                    <p id="form-group">
+                        <label asp-for="Senha">Informe sua Senha:</label>
+                        <input type="text" asp-for="Senha" class="form-control" required />
+                    </p>
+                    <select name="tipo" id="userTipo" class="option">
+                        <option value="@Usuario.ADMIN">Administrador</option>
+                        <option value="@Usuario.PADRAO">Padrão</option>
+                    </select>
 
-        </form>
+                    <p id="form-group">
+                        <input type="submit" value="Cadastrar">
+                    </p>
+
+                </form>
+            </div>
+        </div>
     </section>
 </body>

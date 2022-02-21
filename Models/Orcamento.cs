@@ -11,6 +11,6 @@ namespace PI_ATV04_Bruno_Mello.Models
         public string mensagem {get; set;}
         public DateTime dataEvento {get; set;}
         public int usuarioId {get; set;}
-        public Usuario Usuario {get; set;}
+        //public Usuario Usuario {get; set;}
     }
 }

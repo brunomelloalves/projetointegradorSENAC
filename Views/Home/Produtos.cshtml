@@ -1,93 +1,61 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <title>B-Sound</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="..\css\style.css">
-</head>
-
 <body>
-    <div class="geral">
-        
-            <h3 id="texto">"O que você precisa para o seu evento acontecer!!"</h3>
-        
-        <div >
+
+    <div class="container col-12">
+
+        <div class="row">
+            <div class="col-sm-12 col-md-3 col-xl-3">
+                <h3 id="texto">"O que você precisa para o seu evento acontecer!!"</h3>
+            </div>
+            <div class="col-sm-12 col-md-3 col-xl-3">
                 <p id="textoProdutos">
-                    "Temos toda e estrutura que você precisa para seu evento! Desde Palco, Grid, Som e Luz. Até instrumentos. 
+                    "Temos toda e estrutura que você precisa para seu evento! Desde Palco, Grid, Som e Luz. Até
+                    instrumentos.
                     Contamos com mão de obra qualificada e com o melhor atendimento da região"
                 </p>
-                
             </div>
 
-        <div class="slideshow-container">
+            <div class="col-sm-12 col-md-3 col-xl-6">
+                <div class="slideshow-container">
 
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 4</div>
-                <img src="../fotos/mixer.jpg" id="imagem" alt="MesadeSom" style="width: 700px; height: 550px;">
-                <div class="text">Sonorização</div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 4</div>
+                        <img src="../fotos/mixer.jpg" id="imagem" alt="MesadeSom" style="width: 700px; height: 550px;">
+                        <div class="text">Sonorização</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 4</div>
+                        <img src="../fotos/iluminacao.jpg" id="imagem" alt="iluminacao"
+                            style="width: 700px; height: 550px;">
+                        <div class="text">Iluminação</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 4</div>
+                        <img src="../fotos/bateria.jpg" id="imagem" alt="Bateria" style="width: 700px; height: 550px;">
+                        <div class="text">Instrumentos</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">4 / 4/</div>
+                        <img src="../fotos/estrutura.jpg" id="imagem" alt="Estrutura"
+                            style="width: 700px; height: 550px;">
+                        <div class="text">Estruturas</div>
+                    </div>
+
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095</a>
+
+                    <div class="dot-container">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                    </div>
+                </div>
             </div>
 
-            <div class="mySlides fade">
-                <div class="numbertext">2 / 4</div>
-                <img src="../fotos/iluminacao.jpg" id="imagem" alt="iluminacao" style="width: 700px; height: 550px;">
-                <div class="text">Iluminação</div>
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">3 / 4</div>
-                <img src="../fotos/bateria.jpg" id="imagem" alt="Bateria"
-                    style="width: 700px; height: 550px;">
-                <div class="text">Instrumentos</div>
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">4 / 4/</div>
-                <img src="../fotos/estrutura.jpg" id="imagem" alt="Estrutura"
-                    style="width: 700px; height: 550px;">
-                <div class="text">Estruturas</div>
-            </div>
-
-
-            <a class="prev" onclick="plusSlides(-1)">&#10094</a>
-            <a class="next" onclick="plusSlides(1)">&#10095</a>
-
-            <div class="dot-container">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-                <span class="dot" onclick="currentSlide(4)"></span>
-            </div>
         </div>
     </div>
 </body>
-
-
-
-@*
-    <ul class="produtos">
-
-
-    <li>
-    <h2>Sonorização</h2>
-    <img src="../fotos/mesasom.jfif" width="350" height="300">
-    <p class="produto-descricao"></p>
-    <p class="produto-preco"></p>
-    </li>
-    <li>
-    <h2>Iluminação</h2>
-    <img class="fotos" src="../fotos/iluminacao.jpg" width="350" height="300">
-    <p class="produto-descricao"></p>
-    <p class="produto-preco"></p>
-    </li>
-    <li>
-    <h2>Estrutura</h2>
-    <img class="fotos" src="../fotos/GRID_RETANGULAR_STAND.jpg" width="350" height="300">
-    <p class="produto-descricao"></p>
-    <p class="produto-preco"></p>
-    </li>
-
-    </ul>
-    </section>
-
-    </body> *@

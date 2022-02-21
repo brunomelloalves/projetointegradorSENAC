@@ -36,14 +36,14 @@ namespace PI_ATV04_Bruno_Mello.Controllers
                 HttpContext.Session.SetInt32("IdUsuario", userEncontrado.Id);
                 HttpContext.Session.SetString("Nome", userEncontrado.Nome);
                 
-                return RedirectToAction("Listagem", "Usuario");
+                return RedirectToAction("Listagem", "Orcamento");
             }
         }
 
         public IActionResult Logout()
         {
             HttpContext.Session.Clear();//Limpa todos os dados registrados da sessão e redireciona 
-            return RedirectToAction("Login", "Usuario");
+            return RedirectToAction("Index", "Home");
         }
 
         public IActionResult Excluir(int Id)

@@ -32,6 +32,11 @@ namespace PI_ATV04_Bruno_Mello.Controllers
 
             return View();
         }
+        public IActionResult Clientes()
+        {
+
+            return View();
+        }
 
         public IActionResult Privacy()
         {

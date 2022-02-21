@@ -2,6 +2,7 @@
 @{
     ViewData["Title"] = "Listagem de usuários";
 }
+
 <div class="centralizado">
     <table class="table">
         <tr>
@@ -10,6 +11,7 @@
             <td>Telefone</td>
             <td>Email</td>
             <td>Login</td>
+            <td>Tipo</td>
         </tr>
 
         @foreach (Usuario u in Model)
@@ -20,6 +22,11 @@
                 <td>@u.Telefone</td>
                 <td>@u.Email</td>
                 <td>@u.Login</td>
+                @if(u.Tipo == 0){
+                    <td>Adiministrador</td>
+                }else{
+                    <td>Usuário</td>
+                }
                 <td>
                     <a href="/Usuario/Editar?Id=@u.Id">Alterar/</a>
                     <a href="/Usuario/Excluir?Id=@u.Id" onclick="return confirm('Deseja excluir esse item?');"> Remover</a>
