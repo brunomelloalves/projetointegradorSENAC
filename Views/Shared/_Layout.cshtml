@@ -24,9 +24,9 @@
 </head>
 
 <body>
-    
+
     <nav class="navbar navbar-dark navbar-expand-lg navbar-light bg-dark" id="corfonte">
-        <a class="navbar-brand" ><img src="../fotos/logos/logomenuteste.svg" alt="..." height="45"></a>
+        <a class="navbar-brand"><img src="../fotos/logos/logomenuteste.svg" alt="..." height="45"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
             aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
             <span class="navbar-toggler-icon"></span>
@@ -70,28 +70,38 @@
 
         </div>
     </nav>
-    
+   
+
 
     <main role="main" class="pb-3">
-        @RenderBody()
+        
+                @RenderBody()
+           
+
     </main>
     </div>
-    <footer id="footer">
-        <ul class="icones">
-            <li><a href="https://www.facebook.com/B-Sound-Show-Support-1425842790863667" target="_blank"
-                    class="individual"><i class="fab fa-facebook fa-3x "></i></a></li>
-            <li><a href="https://www.instagram.com/bsound_showsupport" target="_blank" class="individual"><i
-                        class="fab fa-instagram fa-3x"></i></a></li>
-            <li><a href="#" class="individual"><i class="fab fa-whatsapp fa-3x"></i></a></li>
-        </ul>
+    <div class="row">
+        <div class="col-sm">
+            <footer>
+                <ul class="icones">
+                    <li><a href="https://www.facebook.com/B-Sound-Show-Support-1425842790863667" target="_blank"
+                            class="individual"><i class="fab fa-facebook fa-3x "></i></a></li>
+                    <li><a href="https://www.instagram.com/bsound_showsupport" target="_blank" class="individual"><i
+                                class="fab fa-instagram fa-3x"></i></a></li>
+                    <li><a href="#" class="individual"><i class="fab fa-whatsapp fa-3x"></i></a></li>
+                </ul>
 
-        <div class="text-center" style="background-color: #333; padding: 20px; color: f2f2f2;">
-            &copy 2022 Copyright: Bsound Show Support
-            <a href="https://www.linkedin.com/in/bruno-eduardo-de-mello-alves-08ba24a9" target="_blank">Bruno Mello</a>
+                <div class="text-center" style="background-color: #333; padding: 20px; color: f2f2f2;">
+                    &copy 2022 Copyright: Bsound Show Support
+                    <a href="https://www.linkedin.com/in/bruno-eduardo-de-mello-alves-08ba24a9" target="_blank">Bruno
+                        Mello</a>
+                </div>
+            </footer>
         </div>
-    </footer>
+    </div>
+
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
-    
+
     @RenderSection("Scripts", required: false)
 </body>
